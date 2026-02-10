@@ -1,0 +1,5 @@
+D:\web>node -v
+v22.15.0
+
+D:\web>npm -v
+10.9.2

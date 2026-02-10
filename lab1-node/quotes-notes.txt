@@ -1,0 +1,3 @@
+PS D:\web\lab1-node> node echo-args.js "hello world" "x y z"
+ARG:hello world
+ARG:x y z
