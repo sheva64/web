@@ -1,0 +1,45 @@
+/* Базові стилі та скидання відступів */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Розміри основних блоків */
+header { height: 100px; background-color: #e0e0e0; }
+footer { height: 100px; background-color: #c0c0c0; }
+main { 
+    height: 500px; 
+    display: flex; /* Для розміщення в один ряд */
+}
+
+/* Стилі для трьох панелей */
+#leftPanel { width: 33.33%; background-color: #ffcccc; }
+#content { width: 33.33%; background-color: #ccffcc; position: relative; }
+#rightPanel { width: 33.33%; background-color: #ccccff; }
+
+/* Стилі лоадера (з w3schools) */
+.loader {
+  border: 8px solid white;
+  border-radius: 50%;
+  border-top: 8px solid blue;
+  border-bottom: 8px solid yellow;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Клас для підсвічування знайдених рядків у таблиці */
+.highlight {
+    background-color: yellow;
+}
