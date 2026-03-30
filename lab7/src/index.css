@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* --- ГОЛОВНИЙ КОНТЕЙНЕР І ТЕМИ --- */
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Плавна зміна теми */
+}
+
+.theme-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.theme-dark {
+  background-color: #222;
+  color: #f4f4f4;
+}
+
+/* --- HEADER --- */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.theme-toggle-btn {
+  padding: 8px 16px;
+}
+
+/* --- ОСНОВНИЙ БЛОК --- */
+.main-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.theme-light .main-content {
+  background-color: #fff;
+}
+
+.theme-dark .main-content {
+  background-color: #333;
+}
+
+/* --- ФОРМА ДОДАВАННЯ (TaskForm) --- */
+.task-form {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.task-input {
+  padding: 8px;
+  margin-right: 10px;
+  flex-grow: 1; /* Займе весь вільний простір */
+}
+
+.task-submit-btn {
+  padding: 8px 16px;
+}
+
+/* --- ФІЛЬТР (TaskFilter) --- */
+.task-filter {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 5px 10px;
+}
+
+.filter-btn.active {
+  font-weight: bold;
+  border-color: #000; /* Візуальне виділення активної кнопки */
+}
+
+/* --- СПИСОК ТА ЕЛЕМЕНТ ЗАВДАННЯ (TaskList & TaskItem) --- */
+.tasks-remaining {
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: gray;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Клас для виконаного завдання */
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-text {
+  flex-grow: 1;
+}
